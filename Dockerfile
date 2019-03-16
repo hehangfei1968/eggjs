@@ -7,6 +7,7 @@ RUN apk --update add tzdata \
 
 RUN mkdir -p /usr/src/app
 RUN npm i egg-init -g
+RUN npm i pm2 -g
 WORKDIR /usr/src/app
 EXPOSE 7001
 ENV PATH=/usr/src/app/node_modules/.bin:$PATH
