@@ -8,6 +8,7 @@ RUN apk --update add tzdata \
 RUN mkdir -p /usr/src/app
 RUN npm i egg-init -g
 RUN npm i pm2 -g
+RUN npm i laravel-echo-server -g
 WORKDIR /usr/src/app
 EXPOSE 7001
 ENV PATH=/usr/src/app/node_modules/.bin:$PATH
